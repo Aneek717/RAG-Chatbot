@@ -11,7 +11,7 @@ def rag_query(query: str, top_k=3):
     retrieved_docs = rag_retriever.retrieve(
         query=query,
         top_k=top_k,
-        score_threshold=0.3
+        score_threshold=0.2
     )
 
     # 2. No relevant documents found

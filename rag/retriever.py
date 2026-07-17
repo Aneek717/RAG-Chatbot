@@ -21,7 +21,7 @@ class RagRetriever:
         self,
         query: str,
         top_k: int = 5,
-        score_threshold: float = 0.25
+        score_threshold: float = 0.2
     ):
         query_embedding = self.embedding_model.encode(
             query,
